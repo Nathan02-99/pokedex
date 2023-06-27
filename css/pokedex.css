@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #181B46;
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+a{
+  margin-top: -40px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: -40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+    color: yellow ;
+}
+
+h3 {
+
+  margin-top: -35px;
+  text-align: center;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchInput{
+  background-color: #FEC804;
+  border-radius: 10px;
+  align-items: center;
+  height: 30px;
+  width: 250px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#searchInput:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#searchButton {
+  background-color: #E12E4B;
+ border-radius: 10px;
+ align-self: flex-start;
+ height: 30px;
+ color: white;
+ font-weight: bold;
+ font-size: 1.1rem;
+ border: none;
+ margin-left: 20px;
+}
+
+.card {
+  height:250px;
+  width: 270px;
+    list-style: none;
+    padding: 10px;
+    background-color: white;
+    color: white;
+    border-radius: 10px;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-header {
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -20px;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: bolder;
+    order: 1;
+}
+
+.card-name {
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    order: 1;
+}
+
+.card-subtitle {
+  margin-top: -90px; /* Adjust the value as needed */
+  z-index: 1;
+    color: white;
+    font-weight: bolder;
+    order: 2;
+
+}
+
+.card-image {
+    height: 200px;
+}
+
+.card-subtitle span {
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.card-placeholder {
+  border-bottom:0;
+  height: 60%;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(2px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 450px) {
+
+  .card{
+    width: 200px;
+  }
+
+  #searchInput {
+    font-size: 10px;
+    width: 120px;
+    height: 20px;
+  }
+}
