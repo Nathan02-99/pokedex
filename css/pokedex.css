@@ -178,6 +178,10 @@ h3 {
 
 @media (max-width: 450px) {
 
+  h1{
+    margin-top: 10px;
+    }
+
   .card{
     width: 200px;
   }
